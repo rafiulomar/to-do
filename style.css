@@ -1,0 +1,11 @@
+.to-do {
+  background-color: bisque;
+  text-align: center;
+}
+.form-control {
+  width: 50%;
+  display: inline-block;
+}
+ul {
+  list-style-type: decimal;
+}
