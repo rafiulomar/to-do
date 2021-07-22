@@ -19,37 +19,41 @@
   </head>
   <body>
     <div class="container">
-      <div class="mx-auto to-do">
-        <h1>To Do App</h1>
+      <div class="mx-auto to-do" id="to-do-1">
+        <h1 id="to-do-title">To Do App</h1>
+        <div class="light-control">
+          <button class="btn btn btn-dark" id="dark"><i class="fas fa-lightbulb"></i> Dark</button>
+          <button class="btn btn btn-dark" id="light"><i class="fas fa-sun"></i> Light</button>
+        </div>
         <div>
           <input class="form-control" type="text" placeholder="Do......."/>
             <button class="btn btn-success"><i class="fa fa-plus" aria-hidden="true"></i> Create</button>
         </div>
 
-        <div class="to-do mx-auto">
-          <table class="table ">
-            <tbody>
-              <thead>
-                <tr>
-                  <th scope="col">Count</th>
-                  <th scope="col">Want to do</th>
-                  <th scope="col">Actions</th>
-                </tr>
-              </thead>
+        <div class="to-do mx-auto" id="to-do-2">
+          <table class="table table-striped">
 
-
-
+            <thead>
               <tr>
-                <th scope="row"><i class="fas fa-angle-double-right"></i></th>
-                <td>drawing</td>
+                <th scope="col" class="to-do-color">Count</th>
+                <th scope="col" class="to-do-color">Want to do</th>
+                <th scope="col" class="to-do-color">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="do-body">
+        
+              <tr>
+                <th scope="row"><i class="fas fa-angle-double-right count" ></i></th>
+                <td class="to-do-color">drawing</td>
                 <td><button class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button></td>
               </tr>
 
               <tr>
-                <th scope="row"><i class="fas fa-angle-double-right"></i></th>
-                <td>drawing</td>
+                <th scope="row"><i class="fas fa-angle-double-right count" ></i></th>
+                <td class="to-do-color">drawing</td>
                 <td><button class="btn btn-danger"><i class="fa fa-trash"></i> Delete</button></td>
               </tr>
+              
 
             </tbody>
           </table>

@@ -9,3 +9,6 @@
 ul {
   list-style-type: decimal;
 }
+.light-control {
+  margin: 10px;
+}
